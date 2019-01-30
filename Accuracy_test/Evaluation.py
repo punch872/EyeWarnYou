@@ -1,0 +1,34 @@
+features_data = np.array(sentences)
+# แบ่งข้อมูลเป็น 10 ชุด โดยไม่เรียง
+k_fold = KFold(n_splits=10, random_state=1992, shuffle=True)
+word_features = None
+accuracy_scores = []
+for train_set, test_set in k_fold.split(features_data):
+    word_features = get_word_features(get_words_in_sentences(features_data[train_set].tolist()))
+    train_features = apply_features(extract_features, features_data[train_set].tolist())
+    test_features = apply_features(extract_features, features_data[test_set].tolist())
+    classifier = NaiveBayesClassifier.train(train_features)
+    refsets = collections.defaultdict(set)
+    testsets = collections.defaultdict(set)
+    for i, (feats, label) in enumerate(test_features):
+        refsets[label].add(i)
+        observed = classifier.classify(feats)
+        testsets[observed].add(i)
+    accuracy_scores.append(util.accuracy(classifier, test_features))
+    print('train: {} test: {}'.format(len(train_set), len(test_set)))
+    print('=================== Results ===================')
+    print('Accuracy {:f}'.format(accuracy_set[-1]))
+    print('            Positive     Negative')
+    print('F1         [{:f}     {:f}]'.format(
+        f_measure(refsets['pos'], testsets['pos']),
+        f_measure(refsets['neg'], testsets['neg'])
+    ))
+    print('Precision  [{:f}     {:f}]'.format(
+        precision(refsets['pos'], testsets['pos']),
+        precision(refsets['neg'], testsets['neg'])
+    ))
+    print('Recall     [{:f}     {:f}]'.format(
+        recall(refsets['pos'], testsets['pos']),
+        recall(refsets['neg'], testsets['neg'])
+    ))
+    print('===============================================\n')
