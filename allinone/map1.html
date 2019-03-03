@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_32e5f339cf62481dabfa84244dcad57b {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_32e5f339cf62481dabfa84244dcad57b" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_32e5f339cf62481dabfa84244dcad57b = L.map(
+        'map_32e5f339cf62481dabfa84244dcad57b', {
+        center: [13.73, 100.59],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_6d0b562602ec43fc89d7bf18d933abbd = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_32e5f339cf62481dabfa84244dcad57b);
+    
+            var marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc = L.markerClusterGroup({});
+            map_32e5f339cf62481dabfa84244dcad57b.addLayer(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var circle_marker_9498256d8215458fa1d0e44da549c244 = L.circleMarker(
+                [13.8537661, 100.4805983],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_8494486fe6a643809640ae97aad49ae3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_583ff6df1f3c4f76b24686229d811b5d = $(`<div id="html_583ff6df1f3c4f76b24686229d811b5d" style="width: 100.0%; height: 100.0%;">18.15 น. ทางลงสะพานมหาเจษฏาบดินทร์ มุ่งหน้าลงถนนเลี่ยงเมืองนนท์ จยย.พลิกคว่ำ เจ็บ 1 ราย ม.ป่อเต็กตึ้ง ถึงแล้ว กำลัง… https://t.co/1a8wFhtsvG m</div>`)[0];
+                popup_8494486fe6a643809640ae97aad49ae3.setContent(html_583ff6df1f3c4f76b24686229d811b5d);
+            
+
+            circle_marker_9498256d8215458fa1d0e44da549c244.bindPopup(popup_8494486fe6a643809640ae97aad49ae3)
+            ;
+
+            
+        
+    
+            var circle_marker_08291fd6505f4c3f9cc46c13bfb123a1 = L.circleMarker(
+                [13.732150099999998, 100.783644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_d929dd5bca0743739338df928f11e1d8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bce05fd1ecd24989a4ab54323852a215 = $(`<div id="html_bce05fd1ecd24989a4ab54323852a215" style="width: 100.0%; height: 100.0%;">RT @Pentor64S: ถนนมอเตอร์เวย์ขาเข้า หน้าด่านลาดกระบัง ปริมาณรถมากชะลอตัวท้ายสะสม กม. 30+200 https://t.co/iVf3DtUwXa m</div>`)[0];
+                popup_d929dd5bca0743739338df928f11e1d8.setContent(html_bce05fd1ecd24989a4ab54323852a215);
+            
+
+            circle_marker_08291fd6505f4c3f9cc46c13bfb123a1.bindPopup(popup_d929dd5bca0743739338df928f11e1d8)
+            ;
+
+            
+        
+    
+            var circle_marker_7a8475001267409ab53bd0331794b6c0 = L.circleMarker(
+                [13.719860999999998, 100.556732],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_15d1158a026d4bc4b76a5d7185bf42cd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_af896bec4a33472084f4090093005167 = $(`<div id="html_af896bec4a33472084f4090093005167" style="width: 100.0%; height: 100.0%;">@lpinwiset @js100radio รับทราบแจ้งจนท.ให้ครับ m</div>`)[0];
+                popup_15d1158a026d4bc4b76a5d7185bf42cd.setContent(html_af896bec4a33472084f4090093005167);
+            
+
+            circle_marker_7a8475001267409ab53bd0331794b6c0.bindPopup(popup_15d1158a026d4bc4b76a5d7185bf42cd)
+            ;
+
+            
+        
+    
+            var circle_marker_7474faecc8464e3d978594d0e85b0ee8 = L.circleMarker(
+                [13.9547983, 100.4257748],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_d5d68e5453134476a9662c545d3df522 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fb2f58576bc74514b9f2b10b7497a4fd = $(`<div id="html_fb2f58576bc74514b9f2b10b7497a4fd" style="width: 100.0%; height: 100.0%;">RT @tum_chirawat: 17.41 น. มีชาวนาเผาตอข้าว เส้นเลียบวงแหวนตะวันตก ควันไฟไปไกลมาก https://t.co/5JIVoaalmw m</div>`)[0];
+                popup_d5d68e5453134476a9662c545d3df522.setContent(html_fb2f58576bc74514b9f2b10b7497a4fd);
+            
+
+            circle_marker_7474faecc8464e3d978594d0e85b0ee8.bindPopup(popup_d5d68e5453134476a9662c545d3df522)
+            ;
+
+            
+        
+    
+            var circle_marker_811580a1aac947dbb5773214278a11ec = L.circleMarker(
+                [13.6826113, 100.5254335],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_004ef0638bc94af6a98cbbba442f3e4e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0860193ae0344720acd641759363c1eb = $(`<div id="html_0860193ae0344720acd641759363c1eb" style="width: 100.0%; height: 100.0%;">RT @praramcommand: เวลา 17.24 น. เหตุเพลิงไหม้บ้านเรือนประชาชน ซอยพระรามที่ 3 ซอย 33 โรงเรียนวัดดอกไม้ ภายในห้องซ้อมดนตรี ขณะนี้เพลิงสงบ รา… m</div>`)[0];
+                popup_004ef0638bc94af6a98cbbba442f3e4e.setContent(html_0860193ae0344720acd641759363c1eb);
+            
+
+            circle_marker_811580a1aac947dbb5773214278a11ec.bindPopup(popup_004ef0638bc94af6a98cbbba442f3e4e)
+            ;
+
+            
+        
+    
+            var circle_marker_3f733095a1d04ab5948cf68848f86291 = L.circleMarker(
+                [13.7052845, 100.5332175],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_f4f430ead43148cb80f244d165c9dd0d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7cc9d8ed1b914044b6e8613ba546439a = $(`<div id="html_7cc9d8ed1b914044b6e8613ba546439a" style="width: 100.0%; height: 100.0%;">RT @praramcommand: เวลา 17.17 น. เหตุเพลิงไหม้บ้านเรือนประชาชน ซอยพระรามที่ 3 ซอย 33 พื้นที่เขตยานนาวา เจ้าหน้าที่สถานีดับเพลิงถนนจันทน์ถึง… m</div>`)[0];
+                popup_f4f430ead43148cb80f244d165c9dd0d.setContent(html_7cc9d8ed1b914044b6e8613ba546439a);
+            
+
+            circle_marker_3f733095a1d04ab5948cf68848f86291.bindPopup(popup_f4f430ead43148cb80f244d165c9dd0d)
+            ;
+
+            
+        
+    
+            var circle_marker_3844ef38a8344765a6a3cb1fb16645bc = L.circleMarker(
+                [13.8049734, 100.0402029],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_c1ac3db030aa4e4aa6eec5bf02c78d02 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2f878554210743a4b513c6bc2afe4f2b = $(`<div id="html_2f878554210743a4b513c6bc2afe4f2b" style="width: 100.0%; height: 100.0%;">17.13น. อุบัติเหตุ ! รถบรรทุกข้ามเกาะ กีดขวาง ถนนเพชรเกษม ขาเข้า เลยวิทยาลัยเทคนิคนครปฐม เล็กน้อย กีดขวางการจราจร… https://t.co/JHTPRX4bfT m</div>`)[0];
+                popup_c1ac3db030aa4e4aa6eec5bf02c78d02.setContent(html_2f878554210743a4b513c6bc2afe4f2b);
+            
+
+            circle_marker_3844ef38a8344765a6a3cb1fb16645bc.bindPopup(popup_c1ac3db030aa4e4aa6eec5bf02c78d02)
+            ;
+
+            
+        
+    
+            var circle_marker_e5b89d966ce246d3ac3226e4560092df = L.circleMarker(
+                [13.8129131, 100.1019321],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_528347bdaef64dcda475651ee7dcc801 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6b90e2a62178489ba1008ef60c2be498 = $(`<div id="html_6b90e2a62178489ba1008ef60c2be498" style="width: 100.0%; height: 100.0%;">"อุบัติเหตุ ! รถบรรทุกข้ามเกาะ กีดขวาง ""เส้นเพชรเกษมเข้า-ออกเมืองนครปฐม"" ติดมาก ๆ https://t.co/PUQMzN1mg3" m</div>`)[0];
+                popup_528347bdaef64dcda475651ee7dcc801.setContent(html_6b90e2a62178489ba1008ef60c2be498);
+            
+
+            circle_marker_e5b89d966ce246d3ac3226e4560092df.bindPopup(popup_528347bdaef64dcda475651ee7dcc801)
+            ;
+
+            
+        
+    
+            var circle_marker_8874308cff4e4d7db84d18419fc625c1 = L.circleMarker(
+                [13.5946965, 100.8075788],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_2474a166658844489313bcfd58cf49ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b7402b16ecf841d686b076d02cc78535 = $(`<div id="html_b7402b16ecf841d686b076d02cc78535" style="width: 100.0%; height: 100.0%;">เมื่อเวลา 16.32 น. กองทางหลวงพิเศษระหว่างเมือง กรมทางหลวง เกิดอุบัติเหตุ ถนนมอเตอร์เวย์ สาย 7 มุ่งหน้ากรุงเทพ กม.23… https://t.co/oqXCaXWtaP m</div>`)[0];
+                popup_2474a166658844489313bcfd58cf49ca.setContent(html_b7402b16ecf841d686b076d02cc78535);
+            
+
+            circle_marker_8874308cff4e4d7db84d18419fc625c1.bindPopup(popup_2474a166658844489313bcfd58cf49ca)
+            ;
+
+            
+        
+    
+            var circle_marker_eec09715f7c845078d9dea40f3d620f2 = L.circleMarker(
+                [13.8654263, 100.6773403],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_8b114ee3683a47daba551665e3055288 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1bb13ce942bd4ea29c2925b1a9837eef = $(`<div id="html_1bb13ce942bd4ea29c2925b1a9837eef" style="width: 100.0%; height: 100.0%;">16.23 น. ขณะนี้มีงานติดตั้งเสาป้าย Over head ถนนวงแหวนตะวันออก สาย 9 มุ่งหน้าบางปะอิน กม.49+300 ปิดการจราจร 1 ช่องท… https://t.co/8ipNGXarRx m</div>`)[0];
+                popup_8b114ee3683a47daba551665e3055288.setContent(html_1bb13ce942bd4ea29c2925b1a9837eef);
+            
+
+            circle_marker_eec09715f7c845078d9dea40f3d620f2.bindPopup(popup_8b114ee3683a47daba551665e3055288)
+            ;
+
+            
+        
+    
+            var circle_marker_45e0acc7755f4e37b2aa1192d4ef9ff5 = L.circleMarker(
+                [13.8567231, 100.5450377],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_c42170a7d5864d1089aeaa12c67809d5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8234696ea21143e6b56cc3f474748294 = $(`<div id="html_8234696ea21143e6b56cc3f474748294" style="width: 100.0%; height: 100.0%;">"16.19 น. เรือนจำคลองเปรม แยกพงษ์เพชร แยกแคราย  รถติดอากาศก็ร้อนมาก m</div>`)[0];
+                popup_c42170a7d5864d1089aeaa12c67809d5.setContent(html_8234696ea21143e6b56cc3f474748294);
+            
+
+            circle_marker_45e0acc7755f4e37b2aa1192d4ef9ff5.bindPopup(popup_c42170a7d5864d1089aeaa12c67809d5)
+            ;
+
+            
+        
+    
+            var circle_marker_bf2f7905585341c4b121c6192ba96fc4 = L.circleMarker(
+                [13.7240492, 100.5588048],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_bd741d11819548d7884dfcfd85750b8a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_da015b8e44bf42f481a8a196361ddadc = $(`<div id="html_da015b8e44bf42f481a8a196361ddadc" style="width: 100.0%; height: 100.0%;">"15.50 น. ไทยเที่ยวไทย ครั้งที่ 50""   ศูนย์การประชุมแห่งชาติสิริกิติ์  วันนี้ คนเยอะมาก ถนนพระราม4 รถติดขัด m</div>`)[0];
+                popup_bd741d11819548d7884dfcfd85750b8a.setContent(html_da015b8e44bf42f481a8a196361ddadc);
+            
+
+            circle_marker_bf2f7905585341c4b121c6192ba96fc4.bindPopup(popup_bd741d11819548d7884dfcfd85750b8a)
+            ;
+
+            
+        
+    
+            var circle_marker_ce37c034b6a74522a7983629847e6f14 = L.circleMarker(
+                [13.7867018, 100.2761036],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_fd45ba1b9bd74b6f916603fada914594 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a7cfb4a3faf14a88bbaba5e97a7a9ae9 = $(`<div id="html_a7cfb4a3faf14a88bbaba5e97a7a9ae9" style="width: 100.0%; height: 100.0%;">15.43น. การจราจรถนนบรมราชชนนี ขาเข้า นครปฐม เข้า กทม รถติด ตั้งแต่ หน้าเซ็นทรัล ศาลายา จนถึง ทางขึ้นคู่ขนานลอยฟ้าฯ สาย 3 m</div>`)[0];
+                popup_fd45ba1b9bd74b6f916603fada914594.setContent(html_a7cfb4a3faf14a88bbaba5e97a7a9ae9);
+            
+
+            circle_marker_ce37c034b6a74522a7983629847e6f14.bindPopup(popup_fd45ba1b9bd74b6f916603fada914594)
+            ;
+
+            
+        
+    
+            var circle_marker_f5e5458e1c0a4259be057ef11fe88531 = L.circleMarker(
+                [30.375321000000003, 69.34511599999999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_f72b0439a9724701a61af401450d4bec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_514683aaa29747929da7e2a6af271db4 = $(`<div id="html_514683aaa29747929da7e2a6af271db4" style="width: 100.0%; height: 100.0%;">"RT @EarthquakeTMD: แผ่นดินไหวขนาด  Pakistan(28.78°N,67.44°E) ขนาด 4.5  ลึก 10 กม.  วันที่ 3 มี.ค. 2562 เวลา 13:33 น. ตามเวลาประเทศไทย [GEOF…" m</div>`)[0];
+                popup_f72b0439a9724701a61af401450d4bec.setContent(html_514683aaa29747929da7e2a6af271db4);
+            
+
+            circle_marker_f5e5458e1c0a4259be057ef11fe88531.bindPopup(popup_f72b0439a9724701a61af401450d4bec)
+            ;
+
+            
+        
+    
+            var circle_marker_63a910fc38854da9b586a5a4f5abbbde = L.circleMarker(
+                [13.989166699999998, 100.6180717],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_b5c1e86cd7d044b7a29698c5126c9988 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0d1200098904a16abc213298b13658a = $(`<div id="html_d0d1200098904a16abc213298b13658a" style="width: 100.0%; height: 100.0%;">15.22 น. ดีจัง รถไม่ติด จากปทุมธานี ไปฟิวเจอร์ฯ https://t.co/ggdgTbGmMO m</div>`)[0];
+                popup_b5c1e86cd7d044b7a29698c5126c9988.setContent(html_d0d1200098904a16abc213298b13658a);
+            
+
+            circle_marker_63a910fc38854da9b586a5a4f5abbbde.bindPopup(popup_b5c1e86cd7d044b7a29698c5126c9988)
+            ;
+
+            
+        
+    
+            var circle_marker_021551bebf3441d2b877818474494ad3 = L.circleMarker(
+                [16.5852647, 99.4371444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_e5a2242c524a41638c9c25db91615cbb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_127f057f303e4566b00ffed64b53c10e = $(`<div id="html_127f057f303e4566b00ffed64b53c10e" style="width: 100.0%; height: 100.0%;">15.00 น. ถนนพหลโยธิน ขาออกก่อนขึ้นสะพานกลับรถ ม.กรุงเทพ(คลองหลวง)นิดเดียว  รถหกล้อบรรทุกปูนผสมเสร็จ ล้อหลังซ้ายหลุด… https://t.co/XYEH1Yjq5a m</div>`)[0];
+                popup_e5a2242c524a41638c9c25db91615cbb.setContent(html_127f057f303e4566b00ffed64b53c10e);
+            
+
+            circle_marker_021551bebf3441d2b877818474494ad3.bindPopup(popup_e5a2242c524a41638c9c25db91615cbb)
+            ;
+
+            
+        
+    
+            var circle_marker_e0f3eb5fab19499782a8c843cec66535 = L.circleMarker(
+                [13.732150099999998, 100.783644],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_534751f25e554f24a4af40b0c75c07df = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76b9f7635ccd43ea8abf3531f17b55a3 = $(`<div id="html_76b9f7635ccd43ea8abf3531f17b55a3" style="width: 100.0%; height: 100.0%;">13.50 น. ถนนมอเตอร์เวย์ (ทล.7)  ขาเข้า มุ่งหน้ากรุงเทพ ช่วงกม.26+800 ก่อนถึงด่านลาดกระบัง มีรถเจ้าหน้าที่จอดกีดขวาง… https://t.co/nAvxUFOGdg m</div>`)[0];
+                popup_534751f25e554f24a4af40b0c75c07df.setContent(html_76b9f7635ccd43ea8abf3531f17b55a3);
+            
+
+            circle_marker_e0f3eb5fab19499782a8c843cec66535.bindPopup(popup_534751f25e554f24a4af40b0c75c07df)
+            ;
+
+            
+        
+    
+            var circle_marker_af8f07ef4cbc402c921e3dbb923bc02f = L.circleMarker(
+                [13.8282371, 100.614025],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_83e32e7f29104167b198426458dd5976 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e6dbf82984ab43b6ac2255255c63858c = $(`<div id="html_e6dbf82984ab43b6ac2255255c63858c" style="width: 100.0%; height: 100.0%;">""" เข้าแยกลาดพร้าว แน่นทุกด้าน!!  "" 💫 m</div>`)[0];
+                popup_83e32e7f29104167b198426458dd5976.setContent(html_e6dbf82984ab43b6ac2255255c63858c);
+            
+
+            circle_marker_af8f07ef4cbc402c921e3dbb923bc02f.bindPopup(popup_83e32e7f29104167b198426458dd5976)
+            ;
+
+            
+        
+    
+            var circle_marker_6c3097a9e31840e29b97f622e00940a7 = L.circleMarker(
+                [13.8095188, 100.5653202],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_2c68f28605f0447fa9227b07bca840a6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6f5a2b0830e34852b0346fcaf3201b7b = $(`<div id="html_6f5a2b0830e34852b0346fcaf3201b7b" style="width: 100.0%; height: 100.0%;">-ถนนลาดพร้าว ขาเข้า ท้ายอยู่ที่ลาดพร้าวซอย 10 m</div>`)[0];
+                popup_2c68f28605f0447fa9227b07bca840a6.setContent(html_6f5a2b0830e34852b0346fcaf3201b7b);
+            
+
+            circle_marker_6c3097a9e31840e29b97f622e00940a7.bindPopup(popup_2c68f28605f0447fa9227b07bca840a6)
+            ;
+
+            
+        
+    
+            var circle_marker_bf1ff8f94be748a6923d5194830782e7 = L.circleMarker(
+                [16.5852647, 99.4371444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_17788ec9847f4a7c82d5d8c91a328ef4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0c3fe3e9e6b64d52a2e0d30b6b27944c = $(`<div id="html_0c3fe3e9e6b64d52a2e0d30b6b27944c" style="width: 100.0%; height: 100.0%;">-ถนนพหลโยธิน ขาเข้า ท้ายใกล้แย… https://t.co/gaEDTYfTdY" m</div>`)[0];
+                popup_17788ec9847f4a7c82d5d8c91a328ef4.setContent(html_0c3fe3e9e6b64d52a2e0d30b6b27944c);
+            
+
+            circle_marker_bf1ff8f94be748a6923d5194830782e7.bindPopup(popup_17788ec9847f4a7c82d5d8c91a328ef4)
+            ;
+
+            
+        
+    
+            var circle_marker_be15ec7737d44b6cb6a84dd6c7519392 = L.circleMarker(
+                [13.8833238, 100.5810859],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_544c907b09b646b791ad9874357ac1da = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c24ff767418f49599d5b9b10889b7d15 = $(`<div id="html_c24ff767418f49599d5b9b10889b7d15" style="width: 100.0%; height: 100.0%;">พิกัดถนนแจ้งวัฒนะ ขาออก  มุ่งหน้าไปทางแยกปากเกร็ด ท้ายสะสมอยู่ที่แยกหลักสี่ ส่วน… https://t.co/VAoGdH0dDU" m</div>`)[0];
+                popup_544c907b09b646b791ad9874357ac1da.setContent(html_c24ff767418f49599d5b9b10889b7d15);
+            
+
+            circle_marker_be15ec7737d44b6cb6a84dd6c7519392.bindPopup(popup_544c907b09b646b791ad9874357ac1da)
+            ;
+
+            
+        
+    
+            var circle_marker_dc35ba55764f49aabaa964f94f22e659 = L.circleMarker(
+                [13.8071288, 100.4499728],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_63845bd0980d4d14a2e1be198cffca95 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_778357da7efd4368b935973f9be5fe0c = $(`<div id="html_778357da7efd4368b935973f9be5fe0c" style="width: 100.0%; height: 100.0%;">12.51 น. ถนนราชพฤกษ์ ขาออก เชิงทางลงสะพานต่างระดับ ก่อนวนลงถนนสาย 345 ฝั่งที่จะมุ่งหน้าไปแยกบางคูวัด รถนั่งส่วนบุคค… https://t.co/Vlu5ds1rYe m</div>`)[0];
+                popup_63845bd0980d4d14a2e1be198cffca95.setContent(html_778357da7efd4368b935973f9be5fe0c);
+            
+
+            circle_marker_dc35ba55764f49aabaa964f94f22e659.bindPopup(popup_63845bd0980d4d14a2e1be198cffca95)
+            ;
+
+            
+        
+    
+            var circle_marker_bd492edb08b6495fa5290f8312e225e5 = L.circleMarker(
+                [13.7860684, 100.7499662],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_4fa9e4f8c6ad407885f50073a9e6dfd8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c348c320603243b0bd0bce154449a6b7 = $(`<div id="html_c348c320603243b0bd0bce154449a6b7" style="width: 100.0%; height: 100.0%;">ถนนร่มเกล้า ขาออก ระหว่างซอยร่มเกล้า 9 และซอยร่ม… https://t.co/cLp4qXJqb1" m</div>`)[0];
+                popup_4fa9e4f8c6ad407885f50073a9e6dfd8.setContent(html_c348c320603243b0bd0bce154449a6b7);
+            
+
+            circle_marker_bd492edb08b6495fa5290f8312e225e5.bindPopup(popup_4fa9e4f8c6ad407885f50073a9e6dfd8)
+            ;
+
+            
+        
+    
+            var circle_marker_01da252cef064f57bdeb6c5b7cb4acab = L.circleMarker(
+                [13.5906411, 100.8241433],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_51c49ad41cb64b638daaab79fdee3687 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4b95b37d49c84fbaae3a7e361d93e866 = $(`<div id="html_4b95b37d49c84fbaae3a7e361d93e866" style="width: 100.0%; height: 100.0%;">ด่านจ่ายบัตรบางแก้ว 1 ตู้ 13 ได้มีการปรับปรุงผิวจราจร ลงจากทางพิเศษบูรพา มุ่งหน้าบางครุ… https://t.co/ZALsMPm2Kk" m</div>`)[0];
+                popup_51c49ad41cb64b638daaab79fdee3687.setContent(html_4b95b37d49c84fbaae3a7e361d93e866);
+            
+
+            circle_marker_01da252cef064f57bdeb6c5b7cb4acab.bindPopup(popup_51c49ad41cb64b638daaab79fdee3687)
+            ;
+
+            
+        
+    
+            var circle_marker_0b71e02c43e548038fb86daf9522fc35 = L.circleMarker(
+                [13.8001957, 100.5838961],
+                {
+  "bubblingMouseEvents": true,
+  "color": "gray",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(marker_cluster_cac6f2de413f4d4b92ff9bcd55e4b3fc);
+            
+    
+            var popup_9ffca9a83ab549dab0c7e6a2d7893326 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a46a6bd729584394a9df4c7d4225eaf8 = $(`<div id="html_a46a6bd729584394a9df4c7d4225eaf8" style="width: 100.0%; height: 100.0%;">9 มี.ค.นี้ เป็นต้นไป รฟม. แจ้งยกเลิกสัญญาณไฟจราจร และยกเลิกการใช้งานบริเวณแยกภาวนา บนถนนลาดพร้าว ตลอด 24 ชั่วโมง… https://t.co/BIzAI3skkS m</div>`)[0];
+                popup_9ffca9a83ab549dab0c7e6a2d7893326.setContent(html_a46a6bd729584394a9df4c7d4225eaf8);
+            
+
+            circle_marker_0b71e02c43e548038fb86daf9522fc35.bindPopup(popup_9ffca9a83ab549dab0c7e6a2d7893326)
+            ;
+
+            
+        
+    
+            var choropleth_56eb48a9665c42b69abfd5037f2e8a21 = L.featureGroup(
+                ).addTo(map_32e5f339cf62481dabfa84244dcad57b);
+        
+    
+        var geo_json_047c6166a59b49f6b101355f2fc5c28b = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[100.559019, 13.914433], [100.574039, 13.954562], [100.689727, 13.931039], [100.686902, 13.91625], [100.913987, 13.946353], [100.902163, 13.848803], [100.938566, 13.814345], [100.909593, 13.789957], [100.859299, 13.689401], [100.788024, 13.716589], [100.709716, 13.718383], [100.698228, 13.655846], [100.655502, 13.672308], [100.636762, 13.649983], [100.579017, 13.668765], [100.587359, 13.692179], [100.554503, 13.705207], [100.548193, 13.673413], [100.517587, 13.667284], [100.521041, 13.605151], [100.491186, 13.586162], [100.453849, 13.605957], [100.454095, 13.49981], [100.410036, 13.492746], [100.416069, 13.56209], [100.393427, 13.55846], [100.377962, 13.620916], [100.339402, 13.654972], [100.329137, 13.803956], [100.466333, 13.789008], [100.500533, 13.800491], [100.543763, 13.84979], [100.559019, 13.914433]]], "type": "Polygon"}, "properties": {"CHA_NE": "Bangkok", "highlight": {}, "style": {"color": "black", "fillColor": "black", "fillOpacity": 0.2, "opacity": 0.2, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[99.927003, 13.937719], [99.855505, 13.96181], [99.850682, 13.99625], [99.829301, 13.998936], [99.853604, 14.042219], [99.847837, 14.059216], [99.905677, 14.114999], [99.957299, 14.134604], [100.131405, 14.14566], [100.243437, 14.210652], [100.246296, 14.173716], [100.284134, 14.169814], [100.265561, 14.009097], [100.297789, 13.962786], [100.265456, 13.920716], [100.329137, 13.803956], [100.33718, 13.736028], [100.289573, 13.713799], [100.266332, 13.682146], [100.225561, 13.670084], [100.215774, 13.687526], [100.164791, 13.690255], [100.13471, 13.682492], [100.102781, 13.649121], [100.058016, 13.650848], [100.068451, 13.692592], [100.027659, 13.698734], [100.028821, 13.75435], [99.961174, 13.732758], [99.942091, 13.745016], [99.939336, 13.7702], [99.970694, 13.801124], [99.962485, 13.832145], [99.900464, 13.842058], [99.91232, 13.872789], [99.896343, 13.903328], [99.915456, 13.907337], [99.927003, 13.937719]]], "type": "Polygon"}, "properties": {"CHA_NE": "NakhonPathom", "highlight": {}, "style": {"color": "black", "fillColor": "black", "fillOpacity": 0.2, "opacity": 0.2, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[100.469712, 13.966251], [100.355694, 14.000814], [100.331628, 14.056389], [100.344808, 14.116915], [100.489353, 14.108721], [100.517445, 14.128408], [100.55327, 14.111233], [100.61985, 14.131958], [100.891546, 14.276041], [100.891637, 14.24349], [100.951474, 14.271768], [100.946959, 14.237376], [100.913943, 14.221245], [100.914017, 13.946357], [100.686902, 13.91625], [100.689727, 13.931039], [100.640718, 13.931445], [100.612702, 13.95516], [100.605806, 13.943957], [100.538835, 13.956059], [100.501084, 13.936397], [100.469712, 13.966251]]], "type": "Polygon"}, "properties": {"CHA_NE": "PathumThani", "highlight": {}, "style": {"color": "black", "fillColor": "black", "fillOpacity": 0.2, "opacity": 0.2, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[100.55035, 13.877477], [100.543763, 13.84979], [100.507618, 13.82276], [100.515247, 13.81327], [100.472583, 13.790439], [100.329137, 13.803956], [100.265456, 13.920716], [100.297789, 13.962786], [100.265561, 14.009097], [100.2794, 14.12525], [100.299369, 14.140537], [100.339985, 14.122528], [100.331628, 14.056389], [100.364065, 13.992478], [100.463467, 13.971611], [100.501084, 13.936397], [100.538835, 13.956059], [100.567803, 13.951508], [100.55035, 13.877477]]], "type": "Polygon"}, "properties": {"CHA_NE": "Nonthaburi", "highlight": {}, "style": {"color": "black", "fillColor": "black", "fillOpacity": 0.2, "opacity": 0.2, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[100.597329, 13.538991], [100.553415, 13.504443], [100.454095, 13.49981], [100.453849, 13.605957], [100.491186, 13.586162], [100.521041, 13.605151], [100.520424, 13.67563], [100.547464, 13.672689], [100.555826, 13.705897], [100.588193, 13.690873], [100.579017, 13.668765], [100.636762, 13.649983], [100.655502, 13.672308], [100.698228, 13.655846], [100.709716, 13.718383], [100.788024, 13.716589], [100.950877, 13.664437], [100.963416, 13.644533], [100.923673, 13.593826], [100.907057, 13.59202], [100.914035, 13.56958], [100.903753, 13.55437], [100.889811, 13.564156], [100.871892, 13.492128], [100.847822, 13.474878], [100.597329, 13.538991]]], "type": "Polygon"}, "properties": {"CHA_NE": "SamutPrakan", "highlight": {}, "style": {"color": "black", "fillColor": "black", "fillOpacity": 0.2, "opacity": 0.2, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[100.33941, 13.654956], [100.377962, 13.620916], [100.393427, 13.55846], [100.416069, 13.56209], [100.410006, 13.49291], [100.330134, 13.486375], [100.284373, 13.504475], [100.245419, 13.4731], [100.078809, 13.425306], [100.073335, 13.456295], [100.026704, 13.517532], [100.043918, 13.54629], [100.031429, 13.612212], [100.053901, 13.618973], [100.058016, 13.650848], [100.102781, 13.649121], [100.13471, 13.682492], [100.164791, 13.690255], [100.215774, 13.687526], [100.225561, 13.670084], [100.266332, 13.682146], [100.289573, 13.713799], [100.336553, 13.736051], [100.33941, 13.654956]]], "type": "Polygon"}, "properties": {"CHA_NE": "SamutSakhon", "highlight": {}, "style": {"color": "black", "fillColor": "black", "fillOpacity": 0.2, "opacity": 0.2, "weight": 1}}, "type": "Feature"}], "type": "FeatureCollection"},
+            {
+            }
+        ).addTo(choropleth_56eb48a9665c42b69abfd5037f2e8a21 );
+        geo_json_047c6166a59b49f6b101355f2fc5c28b.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+    var color_map_17ac9353e97245dab97c88be9f4d82fa = {};
+
+    
+    color_map_17ac9353e97245dab97c88be9f4d82fa.color = d3.scale.threshold()
+              .domain([3.2, 3.214228456913828, 3.2284569138276553, 3.242685370741483, 3.256913827655311, 3.2711422845691382, 3.285370741482966, 3.299599198396794, 3.3138276553106216, 3.328056112224449, 3.3422845691382768, 3.3565130260521046, 3.370741482965932, 3.3849699398797597, 3.3991983967935875, 3.413426853707415, 3.4276553106212426, 3.4418837675350704, 3.4561122244488978, 3.4703406813627256, 3.4845691382765533, 3.498797595190381, 3.5130260521042085, 3.5272545090180363, 3.541482965931864, 3.5557114228456914, 3.569939879759519, 3.584168336673347, 3.598396793587175, 3.612625250501002, 3.62685370741483, 3.6410821643286577, 3.655310621242485, 3.669539078156313, 3.6837675350701407, 3.697995991983968, 3.712224448897796, 3.7264529058116236, 3.740681362725451, 3.7549098196392787, 3.7691382765531065, 3.7833667334669343, 3.7975951903807617, 3.8118236472945894, 3.8260521042084172, 3.8402805611222446, 3.8545090180360724, 3.8687374749499, 3.8829659318637275, 3.8971943887775553, 3.911422845691383, 3.9256513026052104, 3.9398797595190382, 3.954108216432866, 3.968336673346694, 3.982565130260521, 3.996793587174349, 4.011022044088176, 4.025250501002004, 4.039478957915832, 4.05370741482966, 4.0679358717434875, 4.082164328657315, 4.096392785571142, 4.11062124248497, 4.124849699398798, 4.1390781563126255, 4.153306613226453, 4.167535070140281, 4.181763527054109, 4.195991983967936, 4.210220440881764, 4.224448897795591, 4.238677354709419, 4.252905811623247, 4.267134268537074, 4.281362725450903, 4.2955911823647295, 4.309819639278557, 4.324048096192385, 4.338276553106213, 4.352505010020041, 4.3667334669338675, 4.380961923847696, 4.395190380761523, 4.409418837675351, 4.423647294589179, 4.4378757515030065, 4.452104208416834, 4.466332665330661, 4.480561122244489, 4.494789579158317, 4.509018036072145, 4.523246492985972, 4.5374749498998, 4.551703406813628, 4.565931863727455, 4.580160320641283, 4.59438877755511, 4.608617234468938, 4.622845691382766, 4.637074148296593, 4.651302605210422, 4.6655310621242485, 4.679759519038076, 4.693987975951904, 4.708216432865732, 4.72244488977956, 4.736673346693387, 4.750901803607215, 4.765130260521042, 4.77935871743487, 4.793587174348698, 4.8078156312625255, 4.822044088176353, 4.83627254509018, 4.850501002004008, 4.864729458917836, 4.878957915831664, 4.893186372745491, 4.907414829659319, 4.921643286573147, 4.935871743486974, 4.950100200400802, 4.9643286573146295, 4.978557114228457, 4.992785571142285, 5.007014028056112, 5.021242484969941, 5.0354709418837675, 5.049699398797595, 5.063927855711423, 5.078156312625251, 5.092384769539079, 5.1066132264529065, 5.120841683366734, 5.135070140280561, 5.149298597194389, 5.163527054108217, 5.177755511022045, 5.191983967935872, 5.206212424849699, 5.220440881763528, 5.234669338677355, 5.248897795591183, 5.26312625250501, 5.277354709418838, 5.291583166332666, 5.305811623246493, 5.320040080160322, 5.3342685370741485, 5.348496993987976, 5.362725450901804, 5.376953907815632, 5.39118236472946, 5.405410821643287, 5.419639278557115, 5.433867735470942, 5.44809619238477, 5.462324649298598, 5.476553106212425, 5.490781563126253, 5.50501002004008, 5.519238476953909, 5.533466933867736, 5.547695390781563, 5.561923847695391, 5.576152304609218, 5.590380761523047, 5.604609218436874, 5.618837675350702, 5.6330661322645295, 5.647294589178356, 5.661523046092185, 5.675751503006012, 5.68997995991984, 5.7042084168336675, 5.718436873747495, 5.732665330661323, 5.74689378757515, 5.761122244488979, 5.775350701402806, 5.789579158316633, 5.803807615230461, 5.818036072144289, 5.832264529058117, 5.846492985971945, 5.860721442885772, 5.874949899799599, 5.889178356713427, 5.903406813627255, 5.917635270541083, 5.93186372745491, 5.946092184368738, 5.960320641282566, 5.974549098196393, 5.988777555110221, 6.0030060120240485, 6.017234468937876, 6.031462925851704, 6.045691382765531, 6.05991983967936, 6.074148296593187, 6.088376753507014, 6.102605210420842, 6.116833667334669, 6.131062124248498, 6.145290581162325, 6.159519038076153, 6.17374749498998, 6.187975951903808, 6.202204408817636, 6.216432865731463, 6.230661322645291, 6.244889779559118, 6.259118236472947, 6.273346693386774, 6.287575150300602, 6.3018036072144294, 6.316032064128256, 6.330260521042085, 6.344488977955912, 6.35871743486974, 6.3729458917835675, 6.387174348697395, 6.401402805611223, 6.41563126252505, 6.429859719438879, 6.444088176352706, 6.458316633266533, 6.472545090180361, 6.486773547094189, 6.501002004008017, 6.515230460921844, 6.529458917835672, 6.543687374749499, 6.557915831663327, 6.572144288577155, 6.586372745490983, 6.60060120240481, 6.614829659318637, 6.629058116232466, 6.643286573146293, 6.657515030060121, 6.6717434869739485, 6.685971943887776, 6.700200400801604, 6.714428857715431, 6.72865731462926, 6.7428857715430865, 6.757114228456914, 6.771342685370742, 6.785571142284569, 6.799799599198398, 6.814028056112225, 6.828256513026053, 6.84248496993988, 6.856713426853707, 6.870941883767536, 6.885170340681363, 6.899398797595191, 6.913627254509018, 6.927855711422846, 6.942084168336674, 6.956312625250501, 6.970541082164329, 6.984769539078156, 6.998997995991984, 7.013226452905812, 7.02745490981964, 7.0416833667334675, 7.055911823647294, 7.070140280561123, 7.08436873747495, 7.098597194388778, 7.112825651302606, 7.127054108216433, 7.141282565130261, 7.155511022044088, 7.169739478957917, 7.183967935871744, 7.198196392785571, 7.212424849699399, 7.226653306613227, 7.240881763527055, 7.255110220440883, 7.2693386773547095, 7.283567134268537, 7.297795591182365, 7.312024048096193, 7.32625250501002, 7.3404809619238485, 7.354709418837676, 7.368937875751503, 7.383166332665331, 7.397394789579159, 7.4116232464929865, 7.425851703406814, 7.440080160320642, 7.454308617234469, 7.468537074148297, 7.4827655310621255, 7.496993987975952, 7.51122244488978, 7.525450901803608, 7.539679358717435, 7.553907815631264, 7.5681362725450905, 7.582364729458918, 7.596593186372746, 7.610821643286573, 7.625050100200402, 7.639278557114229, 7.653507014028056, 7.667735470941884, 7.681963927855712, 7.69619238476954, 7.7104208416833675, 7.724649298597195, 7.738877755511022, 7.75310621242485, 7.767334669338679, 7.781563126252506, 7.795791583166333, 7.81002004008016, 7.824248496993988, 7.838476953907817, 7.852705410821644, 7.866933867735471, 7.881162324649299, 7.895390781563126, 7.909619238476955, 7.923847695390783, 7.9380761523046095, 7.952304609218437, 7.966533066132265, 7.980761523046093, 7.994989979959921, 8.009218436873748, 8.023446893787575, 8.037675350701402, 8.051903807615231, 8.06613226452906, 8.080360721442887, 8.094589178356713, 8.10881763527054, 8.12304609218437, 8.137274549098198, 8.151503006012025, 8.165731462925852, 8.179959919839678, 8.194188376753509, 8.208416833667336, 8.222645290581163, 8.23687374749499, 8.251102204408818, 8.265330661322647, 8.279559118236474, 8.2937875751503, 8.308016032064128, 8.322244488977956, 8.336472945891785, 8.350701402805612, 8.364929859719439, 8.379158316633266, 8.393386773547094, 8.407615230460923, 8.42184368737475, 8.436072144288577, 8.450300601202406, 8.464529058116232, 8.478757515030061, 8.492985971943888, 8.507214428857715, 8.521442885771544, 8.53567134268537, 8.5498997995992, 8.564128256513026, 8.578356713426853, 8.592585170340682, 8.60681362725451, 8.621042084168337, 8.635270541082164, 8.649498997995993, 8.66372745490982, 8.677955911823648, 8.692184368737475, 8.706412825651302, 8.720641282565131, 8.734869739478958, 8.749098196392787, 8.763326653306613, 8.77755511022044, 8.791783567134269, 8.806012024048098, 8.820240480961925, 8.834468937875751, 8.84869739478958, 8.862925851703407, 8.877154308617236, 8.891382765531063, 8.90561122244489, 8.919839679358718, 8.934068136272547, 8.948296593186374, 8.9625250501002, 8.976753507014028, 8.990981963927856, 9.005210420841685, 9.019438877755512, 9.033667334669339, 9.047895791583167, 9.062124248496994, 9.076352705410823, 9.09058116232465, 9.104809619238477, 9.119038076152306, 9.133266533066134, 9.147494989979961, 9.161723446893788, 9.175951903807615, 9.190180360721444, 9.204408817635272, 9.2186372745491, 9.232865731462926, 9.247094188376753, 9.261322645290582, 9.27555110220441, 9.289779559118237, 9.304008016032064, 9.318236472945893, 9.332464929859722, 9.346693386773548, 9.360921843687375, 9.375150300601202, 9.389378757515031, 9.40360721442886, 9.417835671342687, 9.432064128256513, 9.44629258517034, 9.460521042084169, 9.474749498997998, 9.488977955911825, 9.503206412825651, 9.517434869739478, 9.531663326653309, 9.545891783567136, 9.560120240480963, 9.57434869739479, 9.588577154308616, 9.602805611222447, 9.617034068136274, 9.6312625250501, 9.645490981963928, 9.659719438877756, 9.673947895791585, 9.688176352705412, 9.702404809619239, 9.716633266533066, 9.730861723446894, 9.745090180360723, 9.75931863727455, 9.773547094188377, 9.787775551102204, 9.802004008016032, 9.816232464929861, 9.830460921843688, 9.844689378757515, 9.858917835671344, 9.87314629258517, 9.887374749499, 9.901603206412826, 9.915831663326653, 9.930060120240482, 9.944288577154309, 9.958517034068137, 9.972745490981964, 9.986973947895791, 10.00120240480962, 10.015430861723448, 10.029659318637275, 10.043887775551102, 10.058116232464931, 10.072344689378758, 10.086573146292587, 10.100801603206413, 10.11503006012024, 10.129258517034069, 10.143486973947896, 10.157715430861725, 10.171943887775551, 10.186172344689378, 10.200400801603207, 10.214629258517036, 10.228857715430863, 10.24308617234469, 10.257314629258518, 10.271543086172345, 10.285771543086174, 10.3])
+              .range(['#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#ffffcc', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#d9f0a3', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#addd8e', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#78c679', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#31a354', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837', '#006837']);
+    
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.x = d3.scale.linear()
+              .domain([3.2, 10.3])
+              .range([0, 400]);
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.legend = L.control({position: 'topright'});
+    color_map_17ac9353e97245dab97c88be9f4d82fa.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_17ac9353e97245dab97c88be9f4d82fa.legend.addTo(map_32e5f339cf62481dabfa84244dcad57b);
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.xAxis = d3.svg.axis()
+        .scale(color_map_17ac9353e97245dab97c88be9f4d82fa.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([3.2, 4.383333333333334, 5.566666666666666, 6.75, 7.933333333333334, 9.116666666666667, 10.3]);
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.g = color_map_17ac9353e97245dab97c88be9f4d82fa.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.g.selectAll("rect")
+        .data(color_map_17ac9353e97245dab97c88be9f4d82fa.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_17ac9353e97245dab97c88be9f4d82fa.x(color_map_17ac9353e97245dab97c88be9f4d82fa.color.domain()[i - 1]) : color_map_17ac9353e97245dab97c88be9f4d82fa.x.range()[0],
+            x1: i < color_map_17ac9353e97245dab97c88be9f4d82fa.color.domain().length ? color_map_17ac9353e97245dab97c88be9f4d82fa.x(color_map_17ac9353e97245dab97c88be9f4d82fa.color.domain()[i]) : color_map_17ac9353e97245dab97c88be9f4d82fa.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 10)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_17ac9353e97245dab97c88be9f4d82fa.g.call(color_map_17ac9353e97245dab97c88be9f4d82fa.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text('Unemployment Rate (%)');
+</script>
